@@ -222,9 +222,20 @@ footer{
     width: 50%;
     margin: 0 auto;
 }
+.bmi_heading_text{
+    margin: 15px 0px 93px 0px;
+}
 .bmi_content_chart h3{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 900;
+}
+.bmi_chart_container{
+    gap: 50px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+.bmi_chart_form p{
+    margin: 15px 0px 36px 0px;
 }
 .bmi_chart_form td{
     color: rgba(255, 255, 255, 0.5);
@@ -248,9 +259,33 @@ footer{
 }
 .bmi_chart_form form{
     grid-template-columns: repeat(2, 1fr);
-    column-span: row ;
+    gap: 13px;
 }
-
+.bmi_chart_form label :first-child{
+    width: 92%;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 13px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.bmi_chart_form label select{
+    width: 100%;
+}
+.bmi_form_select{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.bmi_chart_form form button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 44%;
+    padding: 17px 0px;
+    margin-top: 26px;
+    /* margin-bottom: 60px; */
+}
 
 
 
