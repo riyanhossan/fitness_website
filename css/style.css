@@ -16,6 +16,9 @@ main{
     background: black;
     margin-top: -4px;
 }
+footer{
+    background: black;
+}
 
 /* fonts */
 .font_playwrite{
@@ -24,7 +27,7 @@ main{
 
 /* containers */
 .container{
-    width: 1125px;
+    max-width: 1125px;
     margin: 0 auto;
 }
 
@@ -55,6 +58,10 @@ main{
 .background{
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
+}
+.heading{
+    font-size: 3.15rem;
+    font-weight: 900;
 }
 
 
@@ -100,11 +107,14 @@ main{
 /* banner start */
 .banner{
     margin-top: 34px;
-    position: relative;
 }
 .banner_content{
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.banner_content_img{
 }
 .banner_content_img img{
     width: 100%;
@@ -142,13 +152,14 @@ main{
     color: rgba(239, 237, 232, 0.65);
 }
 .float1{
-    top: 133px;
-    right: 110px;
+    top: 22%;
+    right: -7%;
 }
 .float2{
-    bottom: 67px;
-    right: 450px;
+    bottom: 51px;
+    right: 258px;
     align-items: center;
+    justify-content: space-between;
     gap: 12px;
 }
 .circle{
@@ -156,4 +167,219 @@ main{
     width: 42px;
     height: 42px;
     border-radius: 50%;
+}
+
+/* change start */
+.change{
+    padding-top: 106px;
+}
+.change_content{
+    text-align: center;
+}
+.change_content_item{
+    gap: 42px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 57px;
+}
+.change_content_card h6{
+    font-size: 1.19rem;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 7px;
+}
+.change_card_img img{
+    border-radius: 50%;
+}
+
+/* run start */
+.run{
+    margin-top: 106px;
+}
+.run_content{
+    align-items: center;
+    gap: 150px;
+    padding: 35px;
+    border-radius: 20px;
+    /* flex-wrap: wrap; */
+}
+.run_content p{
+    margin: 18px 0px;
+}
+.run_content_item button{
+    padding: 17px 70px;
+    margin-top: 25px;
+}
+.run_img_con img{
+    border-radius: 20px;
+}
+
+/* bmi start */
+.bmi{
+    margin-top: 106px;
+    padding-bottom: 106px;
+}
+.bmi_heading{
+    width: 50%;
+    margin: 0 auto;
+}
+.bmi_content_chart h3{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.bmi_chart_form td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.06rem;
+}
+.bmi_chart_table table{
+    border-collapse: collapse;
+    margin: 20% 0px;
+}
+.bmi_chart_table th{
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    text-align: left;
+    font-weight: 400;
+    padding: 15px;
+}
+.bmi_chart_table td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.06rem;
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    padding: 15px;
+}
+.bmi_chart_form form{
+    grid-template-columns: repeat(2, 1fr);
+    column-span: row ;
+}
+
+
+
+
+/* team start */
+.team{
+    margin-top: 106px;
+    padding-bottom: 106px;
+}
+.team_content{
+    text-align: center;
+}
+.team_content p{
+    padding: 20px;
+    margin-bottom: 30px;/* temp margin */
+}
+.team_content_img{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.team_img_card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* footer start */
+.footer{
+}
+.footer_content{
+}
+.footer_content_get{
+    justify-content: space-between;
+    padding: 40px 0px 60px 0px;
+}
+.footer_fitcolumn{
+    width: 50%;
+}
+.footer_fitcolumn h1 i{
+    font-size: 3.5rem;
+    color: rgb(230, 83, 60);
+    font-weight: 900;
+}
+.footer_fitcolumn p{
+    margin: 20px 0px;
+}
+.footer_getcolumn{
+    flex-direction: column;
+    gap: 20px;
+}
+.footer_getcolumn h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.footer_getcolumn a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_content_copyright p{
+    text-align: center;
+    padding: 25px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* small device responsive */
+@media screen and (max-width:577px) {
+    .banner_content,
+    .navbar_content,
+    .navbar_content ul,
+    .run_content
+    {
+        flex-direction: column;
+    }
+    .banner_content{
+        gap:100px;
+    }
+    .banner_content_item button{
+        text-align: center;
+    }
+    .banner_item_btn,
+    .run_content_item
+    {
+        text-align: center;
+    }
+    .float1{
+        top: 57%;
+        right: 10%;
+    }
+    .float2{
+        bottom: 11%;
+        right: 54%;
+    }
+    .change_content_item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .change_content_card{
+        padding: 0px 100px;
+    }
+    .run_content{
+        gap: 40px;
+        margin: 30px;
+    }
+    .run_content_item button{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1285px) and (min-width: 578px) {
+    .float1{
+        right: 0px;
+    }
 }
