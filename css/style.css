@@ -190,3 +190,145 @@ footer{
     border-radius: 50%;
 }
 
+/* run start */
+.run{
+    margin-top: 106px;
+}
+.run_content{
+    align-items: center;
+    /* gap: 150px; */
+    padding-right: 35px;
+    border-radius: 18px;
+    /* flex-wrap: wrap; */
+}
+.run_content p{
+    margin: 18px 0px;
+}
+.run_content_item{
+    padding: 35px;
+}
+.run_content_item button{
+    padding: 17px 70px;
+    margin-top: 25px;
+}
+.run_img_con img{
+    border-radius: 18px;
+}
+.image2{
+    
+}
+
+/* bmi start */
+.bmi{
+    margin-top: 106px;
+    padding-bottom: 106px;
+}
+.bmi_heading{
+    width: 50%;
+    margin: 0 auto;
+}
+.bmi_heading_text{
+    margin: 15px 0px 93px 0px;
+}
+.bmi_content_chart h3{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.bmi_chart_container{
+    gap: 50px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+.bmi_chart_form p{
+    margin: 15px 0px 36px 0px;
+}
+.bmi_chart_form td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.06rem;
+}
+.bmi_chart_table table{
+    border-collapse: collapse;
+    margin: 20% 0px;
+}
+.bmi_chart_table th{
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    text-align: left;
+    font-weight: 400;
+    padding: 15px;
+}
+.bmi_chart_table td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.06rem;
+    border: 1px rgba(255, 255, 255, 0.5) solid;
+    padding: 15px;
+}
+.bmi_chart_form form{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+.bmi_chart_form label :first-child{
+    width: 92%;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 13px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.bmi_chart_form label select{
+    width: 100%;
+}
+.bmi_form_select{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.bmi_chart_form form button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 44%;
+    padding: 17px 0px;
+    margin-top: 26px;
+    /* margin-bottom: 60px; */
+}
+.bmi_chart_form option{
+    background: black;
+}
+
+/* team start */
+.team{
+    margin-top: 106px;
+    padding-bottom: 106px;
+}
+.team_content{
+    text-align: center;
+}
+.team_content p{
+    padding: 20px;
+    margin-bottom: 30px;/* temp margin */
+}
+.team_content_img{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 21px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.team_img_card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.team_img_card{
+    position: relative;
+}
+.team_img_text{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-align: start;
+}
+.team_img_text p{
+    margin: 0px;
+    padding: 8px 0px 0px 0px;
+}
+
