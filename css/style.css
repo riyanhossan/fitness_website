@@ -367,3 +367,47 @@ footer{
     padding: 25px 0px;
 }
 
+/* success start */
+.success{
+    background-color: black;
+}
+.success_content{
+    text-align: center;
+    overflow: hidden;
+}
+.success_content h1{
+    margin-bottom: 70px;
+}
+.success_slider_container{
+    position: relative;
+    height: 350px;
+}
+.success_slider_item p{
+    margin-bottom: 25px;
+}
+.success_slider_item h3{
+    margin: 5px;
+}
+.success_slider_content{
+    grid-template-columns: repeat(3, 1fr);
+    width: 300%;
+    position: absolute;
+    left: 100%;
+    animation-name: slide;
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+@keyframes slide {
+    100%{left: calc(0% - 300%);}
+    90%{left: calc(0% - 200%);}
+    80%{left: calc(0% - 200%);}
+    70%{left: calc(0% - 200%);}
+    60%{left: calc(0% - 100%);}
+    50%{left: calc(0% - 100%);}
+    40%{left: calc(0% - 100%);}
+    30%{left: calc(0%);}
+    20%{left: calc(0%);}
+    10%{left: calc(0%);}
+    0%{left: 100%}
+}
+
