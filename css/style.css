@@ -104,6 +104,9 @@ footer{
     padding: 10px 23px;
     border-radius: 47px;
 }
+.nav_ham_menu{
+    display: none;
+}
 
 /* banner start */
 .banner{
@@ -439,11 +442,20 @@ footer{
         width: 90% !important;
         margin: 0 auto;
     }
+    .navbar{
+        position: relative;
+    }
     .navbar_content{
         align-items: start;
     }
     .nav_list{
         display: none;
+    }
+    .nav_ham_menu{
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 80%;
     }
     .banner_content{
         gap:100px;
