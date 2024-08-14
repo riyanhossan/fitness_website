@@ -394,7 +394,7 @@ footer{
     position: absolute;
     left: 100%;
     animation-name: slide;
-    animation-duration: 26s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 @keyframes slide {
@@ -411,3 +411,111 @@ footer{
     0%{left: 100%}
 }
 
+
+
+
+/* small device responsive */
+@media screen and (max-width:577px) {
+    .banner_content,
+    .navbar_content,
+    .navbar_content ul,
+    .run_content,
+    .bmi_chart_container
+    {
+        flex-direction: column;
+    }
+    .team,
+    .navbar_content,
+    .banner_content_item,
+    .change_content,
+    .bmi_heading,
+    .run_content_item button,
+    .bmi_chart_table,
+    .bmi_chart_form,
+    .footer_fitcolumn,
+    .footer_getcolumn,
+    .footer_content_copyright,
+    .footer hr{
+        width: 90% !important;
+        margin: 0 auto;
+    }
+    .navbar_content{
+        align-items: start;
+    }
+    .nav_list{
+        display: none;
+    }
+    .banner_content{
+        gap:100px;
+    }
+    .banner_content_item button{
+        text-align: center;
+    }
+    .banner_item_btn,
+    .run_content_item
+    {
+        text-align: center;
+    }
+    .float1{
+        top: 57%;
+        right: 10%;
+    }
+    .float2{
+        bottom: 11%;
+        right: 54%;
+    }
+    .change_content h3{
+        margin-bottom: 25px;
+    }
+    .change_content_item{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .change_content_card{
+        padding: 0px 100px;
+    }
+    .run_content{
+        gap: 40px;
+        margin: 30px;
+        padding: 35px;
+    }
+    .run_img_con img{
+        content: url('../asset/img/run.jpg');
+    }
+    .bmi_chart_table table{
+        width: 80%;
+    }
+    .team_content_img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer_content_get{
+        flex-direction: column;
+    }
+    .footer_content_copyright p{
+        text-align: left;
+    }
+    .team_img_b{
+        grid-row-start: 1;
+    }
+    .team_img_e{
+        grid-row-start: 2;
+    }
+    .team_img_c{
+        grid-row-start: 3;
+    }
+    .team_img_a,
+    .team_img_d{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1285px) and (min-width: 578px) {
+    .float1{
+        right: 0px;
+    }
+}
